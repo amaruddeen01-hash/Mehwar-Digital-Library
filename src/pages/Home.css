@@ -1,0 +1,203 @@
+.home {
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+.hero {
+  background: linear-gradient(135deg, #047857, #065f46);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 850px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin: 45px 0;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  transition: .3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+}
+
+.stat-card h2 {
+  font-size: 40px;
+  color: #047857;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  color: #666;
+  font-size: 17px;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(170px,1fr));
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.category-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  transition: .3s;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  background: #047857;
+  color: white;
+  transform: scale(1.05);
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 25px;
+  margin-top: 30px;
+}.footer {
+  margin-top: 80px;
+  background: #111827;
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+.footer h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  margin: 8px 0;
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+h2 {
+  color: #065f46;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+a {
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 992px) {
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 35px 15px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero h3 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .stat-card {
+    padding: 22px;
+  }
+
+  .stat-card h2 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 45px 15px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero h3 {
+    font-size: 20px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer h2 {
+    font-size: 24px;
+  }
+}
