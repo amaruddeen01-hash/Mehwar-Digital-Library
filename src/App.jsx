@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Books from "./pages/Books";
 import Favorites from "./pages/Favorites";
 import Authors from "./pages/Authors";
+import AuthorDetails from "./pages/AuthorDetails";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import BookDetails from "./pages/BookDetails";
@@ -55,6 +56,12 @@ export default function App() {
         <Route
           path="/authors"
           element={<Authors />}
+        />
+
+        {/* Author Details */}
+        <Route
+          path="/author/:name"
+          element={<AuthorDetails />}
         />
 
         {/* About */}
